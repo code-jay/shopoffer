@@ -1,8 +1,8 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "9bb95519d9275c0b25d0abad7f6404b3"
+client_id = "fd275ca5a855c4b4a015ec852dbcad8e"
 name = "ShopOffer"
-application_url = "https://example.com"
+application_url = "https://shopoffervercel.vercel.app"
 embedded = true
 
 [build]
@@ -25,4 +25,7 @@ api_version = "2026-04"
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [
+  "https://shopoffervercel.vercel.app/auth/login",
+  "https://shopoffervercel.vercel.app/auth/callback"
+]
